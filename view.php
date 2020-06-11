@@ -27,5 +27,5 @@ echo "<table border = '1'>";
   echo "<td>". $row['restaurant_phone'] . "</td>";
   echo "</tr>";
   }
-
+sqlsrv_free_stmt($getResults);
 ?>
