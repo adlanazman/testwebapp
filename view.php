@@ -13,7 +13,7 @@ if(!$conn)
 
 echo "<table border = '1'>";
   $tsql= "SELECT * FROM [dbo].[restaurant]";
-  $getResults= sqlsrv_query($conn, $tsql);
+  $getResults= sqlsrv_query($conn, $sql);
   if ($getResults == FALSE)
   {
   die(sqlsrv_errors());
@@ -27,6 +27,6 @@ echo "<table border = '1'>";
   echo "<td>". $row['restaurant_phone'] . "</td>";
   echo "</tr>";
   }
-echo"</table>"
+echo"</table>";
 
 ?>
